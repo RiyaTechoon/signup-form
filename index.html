@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Signup Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Student Registration</h1>
+
+    <!-- Student Counter -->
+    <div class="counter">
+        Registered Students: <span id="studentCount">0</span>
+    </div>
+
+    <!-- Signup Form -->
+    <form id="signupForm">
+
+        <!--Input for First Name-->
+        <div class="form-group">
+            <label>First Name</label>
+            <input type="text" id="firstName" required>
+        </div>
+
+        <!--Input for Middle Name-->
+        <div class="form-group">
+            <label>Middle Name</label>
+            <input type="text" id="middleName">
+        </div>
+
+        <!--Input for Last Name-->
+        <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" id="lastName" required>
+        </div>
+
+        <!--Input for DOB-->
+        <div class="form-group">
+            <label>Date of Birth</label>
+            <input type="date" id="dob" required>
+        </div>
+
+        <!--Input for Phone No.-->
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" id="phone" required pattern="[0-9]{10}" placeholder="10 digit number">
+        </div>
+
+        <!--Multiple Course Fields-->
+        <div class="form-group">
+            <label>Desired Course</label>
+            <select id="course" required>
+                <option value="">Select Course</option>
+                <option>Computer Science</option>
+                <option>Data Science</option>
+                <option>AI & ML</option>
+                <option>Cyber Security</option>
+                <option>Web Development</option>
+            </select>
+        </div>
+        
+        <!--Form Submission Button-->
+        <button type="submit">Register</button>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
